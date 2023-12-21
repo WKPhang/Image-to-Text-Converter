@@ -10,7 +10,7 @@ if (!requireNamespace("magick", quietly = TRUE)) {
 library(tesseract)
 library(magick)
 
-### THREAD 1 ###
+### PART 1 ###
 ### For converting single image
 # Define the work directory or folder path containing the image (this is optional)
 setwd("YOUR/WORK/DIRETORY")
@@ -40,7 +40,7 @@ save_file_path <- file.path(converted_folder, converted_file_name)
 write.table(text, file = save_file_path , sep = "")
 
 
-### THREAD 2 ### 
+### PART 2 ### 
 ### For converting bulk images
 # Define the folder path containing the images
 setwd("YOUR/WORK/DIRETORY")
